@@ -1,8 +1,7 @@
 import "./App.css";
-import Navbar from "./base-components/navbar";
-import Home from "./base-components/Home";
+import Navbar from "./base-components/Navbar/navbar";
+import Home from "./base-components/home/Home";
 import backgroundImage from "./Assets/background.jpg";
-
 
 function App() {
   const applicationBackground = {

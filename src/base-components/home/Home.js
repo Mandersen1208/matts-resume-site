@@ -1,4 +1,4 @@
-import WelcomeBanner from "./home/WelcomBanner";
+import WelcomeBanner from "../Navbar/WelcomBanner";
 
 const Home = () => {
   return (
