@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./base-components/Navbar/navbar";
 import Home from "./base-components/home/Home";
-import backgroundImage from "./Assets/background.jpg";
+import { backgroundImage } from "./Assets";
 import Introduction from "./base-components/home/introduction";
 import WelcomeBanner from "./base-components/Navbar/WelcomBanner";
 

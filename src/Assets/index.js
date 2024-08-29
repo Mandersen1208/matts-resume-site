@@ -1,8 +1,9 @@
 // Assets/index.js
-import introductionImage from './introductionImage.jpeg';
+import introductionImage from './leaning.jpeg';
+import backgroundImage from './background.jpg';
 // Import other assets as needed
 
 export {
   introductionImage,
-  // Export other assets as needed
+  backgroundImage,
 };
