@@ -2,11 +2,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 350px;
+    padding: auto;
+    border-color: blueviolet;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
   }
   
   .introductionSection {
     width: 100%;
-    max-width: 800px; /* Adjust as needed */
+    max-width: 200; /* Adjust as needed */
     padding: 20px;
     box-sizing: border-box;
   }

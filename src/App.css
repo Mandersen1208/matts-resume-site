@@ -47,8 +47,6 @@
 /* App.css */
 .introductionContainer {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 20px; /* Add some padding */
 }
 
@@ -64,6 +62,7 @@
   padding: 20px; /* Adjust the value as needed */
   display: flex; /* Use flexbox for centering content */
   justify-content: flex-start; /* Center content horizontally */
+  padding-top: 100px;
 }
 
 
