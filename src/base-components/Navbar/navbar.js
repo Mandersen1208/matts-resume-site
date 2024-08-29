@@ -1,46 +1,45 @@
 import Button from "@mui/material/Button";
-import { purple } from "@mui/material/colors";
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
+import "./Navbar.css";
+import { isDisabled } from "@testing-library/user-event/dist/utils";
 
 const Navbar = () => {
   const containerStyle = {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "space",
     textShadow: "2px 2px 4px #000000",
+  };
+
+  const buttons = [
+    { label: "Home", href: "/", isDisabled: false },
+    { label: "About Me", href: "/AboutMe", isDisabled: true },
+    { label: "Resume", href: "/Resume", isDisabled: true },
+    { label: "Contact Me", href: "/Contact", isDisabled: true },
+  ];
+
+  const renderButtons = (buttons) => {
+    return buttons.map((button, index) => {
+      if (button.isDisabled === true) {
+        return null;
+      }
+      return (
+        <Button key={index} color="inherit" href={button.href} className="buttons">
+          {button.label}
+        </Button>
+      );
+    });
   };
 
   return (
     <AppBar style={{ background: "rgba(120, 39, 200, .2)" }}>
-      <Container>
-        <Toolbar>
-          <Typography
-            variant="h6"
-            component="div"
-            style={{
-              textShadow: "2px 2px 4px #000000",
-              textJustify: "center",
-              color: "black",
-              FontFaceSetLoadEvent: "bold",
-            }}
-          >
-            Welcome to my Portfolio
-          </Typography>
-        </Toolbar>
-      </Container>
-      <Container style={containerStyle}>
-        <Button color="inherit" href="/">
-          Home
-        </Button>
-        <Button color="inherit" href="/AboutMe">
-          About Me
-        </Button>
-        <Button color="inherit" href="/Resume">
-          Resume
-        </Button>
-        <Button color="inherit" href="/Contact">
-          Contact
-        </Button>
-      </Container>
+      <Toolbar className="navbar">
+        <Typography variant="h6" component="div" className="navbarText">
+          Welcome to my Portfolio
+        </Typography>
+      </Toolbar>
+      <div className="navbarItems" style={containerStyle}>
+        {renderButtons(buttons)}
+      </div>
     </AppBar>
   );
 };

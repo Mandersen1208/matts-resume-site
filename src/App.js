@@ -2,21 +2,22 @@ import "./App.css";
 import Navbar from "./base-components/Navbar/navbar";
 import Home from "./base-components/home/Home";
 import backgroundImage from "./Assets/background.jpg";
+import Introduction from "./base-components/home/introduction";
+import WelcomeBanner from "./base-components/Navbar/WelcomBanner";
 
 function App() {
   const applicationBackground = {
-    background: `rgba(255, 255, 255, 0.5) url(${backgroundImage})`, // Combine background color and image
-    backgroundSize: "100% 125%", // Ensures the image resizes to fit the frame
-    backgroundPosition: "center", // Centers the image
-    backgroundRepeat: "no-repeat", // Prevents the image from repeating
-    backgroundBlendMode: "overlay", // Blends the background color and image
-  };
+    background: `rgba(255, 255, 255, 0.5) url(${backgroundImage})`,
+    display: "flex",};
 
   return (
+    
     <div className="App" style={applicationBackground}>
-      <Navbar />
-      <div className="content">
+      <WelcomeBanner />
+      <Navbar/>
         <Home />
+      <div className="introduction-container">
+        <Introduction />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
-import { purple } from "@mui/material/colors";
 
 const WelcomeBanner = () => {
   return (
