@@ -1,40 +1,35 @@
-/* Introduction.css */
 .introductionWrapper {
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: auto; /* Ensure it does not take full height */
-    width: 100%; /* Ensure it takes the full width */
-    padding: 20px; /* Add some padding */
   }
   
   .introductionSection {
-    width: 300px; /* Set the width of the introduction box */
-    height: 150px; /* Set the height of the introduction box */
-    display: flex; /* Use flexbox for centering content */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-    border: 1px solid rgba(221, 116, 224, 0.808); /* Add a border for visibility */
-    padding: 16px; /* Add padding */
-    background-color: #f9f9f9; /* Optional: Add a background color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
-    border-radius: 3px; /* Optional: Add rounded corners */
-  }
-
-  .introductionText {
-    text-align: justify; /* Justify the text */
-    width: 100%; /* Ensure the text container takes full width */
-    overflow: auto; /* Add scrollbars if content overflows */
-  }
-
-  .textImageContainer {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box;
   }
   
-  .textImageContainer p {
-    flex: 1;
-    margin-right: 20px; /* Add some space between the text and the image */
+  .contentHeader {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .introductionText {
+    width: 100%;
+  }
+  
+  .textImageContainer {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and image */
+    flex-direction: row; /* Align content in a row */
+  }
+  
+  .textContainer {
+    flex: 1; /* Allow the text container to take up available space */
+    margin-left: 20px; /* Add some space between the image and the text */
   }
   
   .introductionImage {
