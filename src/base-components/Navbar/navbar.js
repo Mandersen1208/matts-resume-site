@@ -1,7 +1,6 @@
 import Button from "@mui/material/Button";
-import { AppBar, Container, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar, Typography } from "@mui/material";
 import "./Navbar.css";
-import { isDisabled } from "@testing-library/user-event/dist/utils";
 
 const Navbar = () => {
   const containerStyle = {

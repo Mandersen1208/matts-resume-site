@@ -26,3 +26,18 @@
     width: 100%; /* Ensure the text container takes full width */
     overflow: auto; /* Add scrollbars if content overflows */
   }
+
+  .textImageContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .textImageContainer p {
+    flex: 1;
+    margin-right: 20px; /* Add some space between the text and the image */
+  }
+  
+  .introductionImage {
+    width: 150px; /* Adjust the width as needed */
+    height: auto;
+  }
