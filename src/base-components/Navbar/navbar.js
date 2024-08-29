@@ -6,17 +6,22 @@ const Navbar = () => {
   const containerStyle = {
     display: "flex",
     justifyContent: "space-between",
-    textShadow: "2px 2px 4px #000000"
+    textShadow: "2px 2px 4px #000000",
   };
 
   return (
-    <AppBar style={{ background: 'rgba(120, 39, 200, .2)'  }}>
+    <AppBar style={{ background: "rgba(120, 39, 200, .2)" }}>
       <Container>
         <Toolbar>
           <Typography
             variant="h6"
             component="div"
-            style={{ textShadow: "2px 2px 4px #000000",  textJustify: "center", color: "black", FontFaceSetLoadEvent: "bold" }}
+            style={{
+              textShadow: "2px 2px 4px #000000",
+              textJustify: "center",
+              color: "black",
+              FontFaceSetLoadEvent: "bold",
+            }}
           >
             Welcome to my Portfolio
           </Typography>
