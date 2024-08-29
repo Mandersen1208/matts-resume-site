@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-size: cover; /* Ensures the image covers the entire frame */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-blend-mode: overlay; /* Blends the background color and image */
 }
 
 .App-logo {
@@ -14,7 +20,6 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,6 +27,10 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-size: contain; /* Ensures the image resizes to fit the frame */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-blend-mode: overlay; /* Blends the background color and image */
 }
 
 .App-link {

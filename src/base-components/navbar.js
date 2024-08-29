@@ -1,22 +1,28 @@
 import Button from "@mui/material/Button";
-import { red } from "@mui/material/colors";
+import { purple } from "@mui/material/colors";
 import { AppBar, Container, Toolbar, Typography } from "@mui/material";
 
 const Navbar = () => {
+  const containerStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    textShadow: "2px 2px 4px #000000"
+  };
+
   return (
-    <AppBar style={{ background: red[400] }}>
-      <Container style={{ background: red[400] }}>
-        <Toolbar sx={{ background: red[400] }}>
+    <AppBar style={{ background: 'rgba(120, 39, 200, .2)'  }}>
+      <Container>
+        <Toolbar>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, background: red[400] }}
+            style={{ textShadow: "2px 2px 4px #000000",  textJustify: "center", color: "black", FontFaceSetLoadEvent: "bold" }}
           >
             Welcome to my Portfolio
           </Typography>
         </Toolbar>
       </Container>
-      <Container style={{ display: "flex", justifyContent: "space-between" }}>
+      <Container style={containerStyle}>
         <Button color="inherit" href="/">
           Home
         </Button>
