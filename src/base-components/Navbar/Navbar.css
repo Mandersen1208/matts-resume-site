@@ -1,0 +1,31 @@
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    padding: 5px 10px; /* Add padding for better spacing */
+}
+
+.navbar .navbarText {
+    font-size: 24px !important; /* Set the font size */
+    font-weight: bold !important; /* Set the font weight */
+    color: #000000; /* Override the font color */
+    text-align: left !important; /* Align text to the left */
+    text-shadow: 2px 2px 4px #000000;
+    bleed: 10px;
+}
+
+.navbar .navbarItems {
+    justify-content: space-between; /* Distribute space between items */
+    text-shadow: 2px 2px 4px #000000;
+    display: flex !important; /* Use flexbox for layout */
+    margin: 0 10px;
+    color: #000000;
+}
+
+.navbar .navbarItems buttons {
+    color: #000000; /* Set the font color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px; /* Add padding for better spacing */
+    text-shadow: 2px 2px 4px #000000;
+    margin: 0 10px; /* Add margin for spacing between buttons */
+}
