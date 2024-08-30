@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.975e3312.css",
+    "main.js": "/static/js/main.64f5f88d.js",
+    "static/media/leaning.jpeg": "/static/media/leaning.403a5eeaa472ddf4b36b.jpeg",
+    "static/media/MatthewAndersenResume.pdf": "/static/media/MatthewAndersenResume.161d4942fcd4dbe792d2.pdf",
+    "static/media/background.jpg": "/static/media/background.f5eecc8351e7bcf5ac51.jpg",
+    "index.html": "/index.html",
+    "main.975e3312.css.map": "/static/css/main.975e3312.css.map",
+    "main.64f5f88d.js.map": "/static/js/main.64f5f88d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.975e3312.css",
+    "static/js/main.64f5f88d.js"
+  ]
+}
