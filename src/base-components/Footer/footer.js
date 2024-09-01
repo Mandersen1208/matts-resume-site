@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./footer.css";
+import { mattAndersenResume } from "../../Assets";
 
 const Footer = () => {
   const [isFooterVisible, setIsFooterVisible] = useState(false);
@@ -26,13 +27,16 @@ const Footer = () => {
       <footer className={`footer ${isFooterVisible ? "footerVisible" : ""}`}>
         <div className="footerContent">
           <p>
-            <a href="https://www.linkedin.com/in/matthew-andersen-b491277a/">Linked-In</a> | <a href="https://github.com/Mandersen1208">Git-Hub</a> 
-             | <a href="Resume">Resume</a> | <a href="/privacy-policy">Credits for photos To Mike Rivera</a> 
+            <a href="https://www.linkedin.com/in/matthew-andersen-b491277a/">Linked-In</a> |{" "}
+            <a href="https://github.com/Mandersen1208">Git-Hub</a>|{" "}
+            <a href={mattAndersenResume}>Download Resume</a> |{" "}
+            <a href="https://www.instagram.com/heyitsfotomike/">Credits for photos to Foto Mike</a>{" "}
+            |<a>v 0.1.1</a>
           </p>
         </div>
       </footer>
       <button className="showFooterButton" onClick={handleShowFooter}>
-        {isFooterVisible? <a>Show Footer</a> : null}
+        {isFooterVisible ? <a>Show Footer</a> : null}
       </button>
     </div>
   );

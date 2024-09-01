@@ -1,10 +1,14 @@
 .App {
   height: 100vh;
   width: 100%;
-  background-size: cover; /* Ensures the image covers the entire frame */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-blend-mode: overlay; /* Blends the background color and image */
+  background-size: cover;
+  /* Ensures the image covers the entire frame */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  background-blend-mode: overlay;
+  /* Blends the background color and image */
 }
 
 .App-logo {
@@ -25,10 +29,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background-size: cover; /* Ensures the image resizes to fit the frame */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-blend-mode: overlay; /* Blends the background color and image */
+  background-size: cover;
+  /* Ensures the image resizes to fit the frame */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  background-blend-mode: overlay;
+  /* Blends the background color and image */
 }
 
 .App-link {
@@ -39,6 +47,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -47,21 +56,26 @@
 /* App.css */
 .introductionContainer {
   display: flex;
-  padding: 20px; /* Add some padding */
+  padding: 20px;
+  /* Add some padding */
 }
 
 .content-container {
   margin-top: 20px;
-  padding: 20px; 
-  display: flex; 
+  padding: 20px;
+  display: flex;
   justify-content: flex-start;
 }
 
 .introduction-container {
-  margin-top: 20px; /* Adjust the value as needed */
-  padding: 20px; /* Adjust the value as needed */
-  display: flex; /* Use flexbox for centering content */
-  justify-content: flex-start; /* Center content horizontally */
+  margin-top: 20px;
+  /* Adjust the value as needed */
+  padding: 20px;
+  /* Adjust the value as needed */
+  display: flex;
+  /* Use flexbox for centering content */
+  justify-content: flex-start;
+  /* Center content horizontally */
   padding-top: 100px;
 }
 
@@ -73,5 +87,3 @@
   color: #333;
   text-align: center;
 }
-
-

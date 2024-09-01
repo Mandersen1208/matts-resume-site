@@ -1,19 +1,20 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
-  }
-  
-  #root {
+}
+
+#root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  }
-  
-  .content {
+}
+
+.content {
     flex: 0;
-  }
-  
-  .footer {
+}
+
+.footer {
     background-color: #333;
     color: white;
     text-align: left;
@@ -21,29 +22,34 @@ html, body {
     position: absolute !important;
     bottom: 0;
     width: 100%;
-    opacity: 1; /* Ensure the footer is fully opaque */
-    pointer-events: auto; /* Allow interaction */
-  }
-  
-  .footerContent a {
+    opacity: 1;
+    /* Ensure the footer is fully opaque */
+    pointer-events: auto;
+    /* Allow interaction */
+}
+
+.footerContent a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-  }
-  
-  .footerContent a:hover {
+}
+
+.footerContent a:hover {
     text-decoration: underline;
-  }
-  
-  @media (min-width: 800px) {
+}
+
+@media (min-width: 800px) {
     .footer {
-      display: block; /* Show the footer on larger screens */
-      position: static; /* Make the footer static on larger screens */
+        display: block;
+        /* Show the footer on larger screens */
+        position: static;
+        /* Make the footer static on larger screens */
     }
-  }
-  
-  .showFooterButton {
-    display: none; /* Hide the button by default */
+}
+
+.showFooterButton {
+    display: none;
+    /* Hide the button by default */
     position: fixed;
     bottom: 50px;
     right: 20px;
@@ -53,10 +59,11 @@ html, body {
     padding: 10px;
     cursor: pointer;
     transition: opacity 0.5s ease-in-out;
-  }
-  
-  @media (max-width: 799px) {
+}
+
+@media (max-width: 799px) {
     .showFooterButton {
-      display: block; /* Show the button on smaller screens */
+        display: block;
+        /* Show the button on smaller screens */
     }
-  }
+}
